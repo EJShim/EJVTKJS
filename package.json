@@ -1,0 +1,32 @@
+{
+  "name": "ejvtkjs",
+  "version": "1.0.0",
+  "description": "EJ VTKJS Test",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EJShim/EJVTKJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EJShim/EJVTKJS/issues"
+  },
+  "homepage": "https://github.com/EJShim/EJVTKJS#readme",
+  "dependencies": {
+    "vtk.js": "^2.8.1"
+  },
+  "devDependencies": {
+    "kw-web-suite": "^2.2.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "build:release": "export NODE_ENV=production && webpack -p",
+    "start": "webpack-dev-server --content-base ./dist",
+    "commit": "git cz",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  }
+}
